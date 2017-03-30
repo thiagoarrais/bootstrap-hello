@@ -13,14 +13,17 @@
 
 
 
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <form>
-          <label for="username">Username</label>
-          <input name="username" class=".has-warning" />
-        </form>
+    <div class="form-group has-warning has-feedback">
+      <label class="control-label" for="inputWarning">Email address input field with warning</label>
+      <div class="input-group">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" id="inputWarning" aria-describedby="inputGroupWarningStatus">
       </div>
+      <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+      <span id="inputGroupWarningStatus" class="sr-only">(warning)</span>
     </div>
+
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
